@@ -180,7 +180,8 @@ By using a mathematical device called a [**change of base**](http://en.wikipedia
 
 Our natural counting system is more precisely called the **decimal system**, and it has a base of `10`. Bases work off of the position of the _digits_ in the number. The number of potential digits in a base is equal to the value of the base, so base 10 has 10 possible digits it can express numbers with. The digits always include `0`. If you count how many numbers are between `0` and `9`, you'll find there are `10`, so `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]` is the digit set for base 10.
 
-To figure out the decimal value of a number in a different base, the value of each digit is multiplied by the base to the power of the digit's position. Then all those are added together. "To the power of" just means multiplying a number by itself that many times. This is called an __exponent__.
+To figure out the decimal value of a number in a different base, the value of each digit is multiplied by the base to the power of the digit's position (The _position_ of the digit
+is 0 at the far right, then increases to the left). Then all those are added together. "To the power of" just means multiplying a number by itself that many times. This is called an __exponent__.
 
 Let's explain the decimal number `123`. We are going to convert it from base 10 to base 10, so the number won't actually change, but breaking it down will help explain the concept:
 
@@ -202,9 +203,9 @@ The **binary system** is base 2, which contains only 2 digits including `0`. Tha
 
 Let's look at an example binary octet, `00101010`, and convert it to decimal:
 
-* The value of the 0th digit is `1`, and the base is 2, so its decimal value is `0 * 2 ^ 0`, or `0 * 1`, which equals `0`.
+* The value of the 0th digit is `0`, so its decimal value is `0` since any number times 0 equals 0.
 * The value of the 1st digit is `1`, so its decimal value is `1 * 2 ^ 1`, or `1 * 2`, which equals `2`.
-* The value of the 2nd digit is `0`, so its decimal value is `0` since any number times 0 equals 0.
+* The value of the 2nd digit is `0`
 * The value of the 3rd digit is `1`, so its decimal value is `1 * 2 ^ 3`, or `1 * 2 * 2 * 2`, which equals `8`.
 * The value of the 4th digit is `0`
 * The value of the 5th digit is `1`, so its decimal value is `1 * 2 ^ 5`, or `1 * 2 * 2 * 2 * 2 * 2`, which equals `32`.
