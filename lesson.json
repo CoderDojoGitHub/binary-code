@@ -1,15 +1,13 @@
 {
     "title": "Binary Code",
-        "summary": "Let's unravel the mysteries of binary code!"
-        "image_url": "https://dl.dropboxusercontent.com/u/7071786/binary_code.png",
-        "author_github_username": "hunterbridges",
-        "events": [
-        {
-            "location": "GitHub 88 Colin P Kelly Jr St San Francisco CA 94107",
-            "date": "Sat Apr 5 2014 10:00:00 GMT-0700 (PDT)",
-            "length_in_hours": 2,
-            "teacher_github_username": ""
-        }
-    ],
+    "summary": "Let's unravel the mysteries of binary code!"
+    "image_url": "https://dl.dropboxusercontent.com/u/7071786/binary_code.png",
+    "author_github_username": "hunterbridges",
+    "events": [{
+        "location": "GitHub 88 Colin P Kelly Jr St San Francisco CA 94107",
+        "date": "Sat Apr 5 2014 10:00:00 GMT-0700 (PDT)",
+        "length_in_hours": 2,
+        "teacher_github_username": ""
+    }],
     "length": "2"
 }
