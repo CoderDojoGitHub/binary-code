@@ -10,7 +10,7 @@ For this lesson you'll need to have _Python 2.7_ installed. If you're on Mac or 
 
 Let's jump right into some code. Create a new Python file called `binary_example1.py`. Type this into it:
 
-```
+```py
 num = 1
 print num
 
@@ -21,7 +21,7 @@ for i in range(11):
 
 Run it, and you'll see that this is what you get:
 
-```
+```sh
 $ python binary_example1.py
 1
 2
@@ -80,7 +80,7 @@ So that is the basics of how transistors came to be used in computer hardware. H
 
 Let's look at `binary_example1.py` again.
 
-```
+```py
 num = 1
 print num
 
@@ -99,7 +99,7 @@ The **left shift operator** (`<<`) takes the binary version of the number to the
 
 So throughout our program, the variable `num` is backed by these values:
 
-```
+```py
 00000001 # num = 1
 00000010 # num = num << 1
 00000100 # num = num << 1
@@ -112,7 +112,7 @@ So throughout our program, the variable `num` is backed by these values:
 
 See how the `1` bit shifts to the left with every cycle of the `for` loop? We can map these **octets** to our program output to see how they match up.
 
-```
+```py
 00000001 # 1
 00000010 # 2
 00000100 # 4
@@ -126,7 +126,7 @@ See how the `1` bit shifts to the left with every cycle of the `for` loop? We ca
 
 What about `256`, `512`, `1024` and `2048`? Python knows that it needs another **byte** to store those larger numbers, so we get another **octet** to left shift into.
 
-```
+```py
 00000000 00000001 # 1
 00000000 00000010 # 2
 00000000 00000100 # 4
@@ -147,7 +147,7 @@ Now we need to understand why the position of the `1` bit determines which numbe
 
 Let's make a new Python file and call it `binary_example2.py`. It's going to be a lot like our first example, but we are going to replace the **left shift** with another expression.
 
-```
+```py
 num = 1
 print num
 
@@ -158,7 +158,7 @@ for i in range(11):
 
 **What do you think this program outputs?** Here's a hint: remember how after we played the _2048_ game I said to think about the numbers as `2 * 2`, `2 * 4`, `2 * 8`, and so on? Lo and behold!
 
-```
+```sh
 $ python binary_example2.py
 1
 2
@@ -233,7 +233,7 @@ So letters on a computer are just an illusion! At least an illusion as far as th
 Here's our last example, `binary_example3.py`. I am using the `ord()` and `chr()` functions to find the number value for a character, messing with that
 number, then turning it back into a character.
 
-```
+```py
 letter_a = "A"
 letters = []
 
