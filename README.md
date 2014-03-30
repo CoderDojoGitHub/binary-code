@@ -16,7 +16,7 @@ print num
 
 for i in range(11):
 	num = num << 1
-	print number
+	print num
 ```
 
 Run it, and you'll see that this is what you get:
@@ -86,7 +86,7 @@ print num
 
 for i in range(11):
 	num = num << 1
-	print number
+	print num
 ```
 
 So, about that `<<` thing. `<<` is actually an _operator_ much like `+`, `-`, `*` or `/`. However, while `+-*/` are _arithmetic operators_, `<<` is a _bitwise operator_. It is called **left shift**, and it operates on the _underlying binary representation_ of the number to the left of `<<`. What this implies is that **for every number** (`1`, `2`, `3`, `4`, ...), **there is a binary code equivalent**.
@@ -153,7 +153,7 @@ print num
 
 for i in range(11):
 	num = num * 2
-	print number
+	print num
 ```
 
 **What do you think this program outputs?** Here's a hint: remember how after we played the _2048_ game I said to think about the numbers as `2 * 2`, `2 * 4`, `2 * 8`, and so on? Lo and behold!
